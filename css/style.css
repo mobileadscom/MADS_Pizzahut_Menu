@@ -1,0 +1,334 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#rma-widget {
+    width: 320px;
+    height: 480px;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    overflow: hidden;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.guide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../img/guide.png) no-repeat;
+    pointer-events: none;
+}
+
+.firstBg {
+	display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg01.png);
+    pointer-events: none;
+}
+
+.secondBg {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg02.png);
+    pointer-events: none;
+    z-index: 2;
+}
+
+.logo {
+    display: none;
+    position: absolute;
+    top: 74px;
+    left: 17px;
+    width: 282px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.pilihSemuaBtn {
+    display: none;
+    border: none;
+    cursor: pointer;
+    width: 127px;
+    height: 45px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background: url(../img/pilih-semua.png);
+}
+
+.menuPilihankuBtn {
+    display: none;
+    border: none;
+    cursor: pointer;
+    width: 195px;
+    height: 46px;
+    position: absolute;
+    left: 121px;
+    bottom: 1px;
+    background: url(../img/Ini-menu-pilihanku.png);
+}
+
+.ulangiBtn {
+    display: none;
+    border: none;
+    cursor: pointer;
+    width: 129px;
+    height: 46px;
+    position: absolute;
+    left: 4px;
+    bottom: 0;
+    background: url(../img/ulangi.png);
+    z-index: 2;
+}
+
+.menuDiskonBtn {
+    display: none;
+    border: none;
+    cursor: pointer;
+    width: 194px;
+    height: 45px;
+    position: absolute;
+    left: 125px;
+    bottom: 1px;
+    background: url(../img/menu-diskon-lainnya.png);
+    z-index: 2;
+}
+
+.pagination {
+	display: none;
+    width: 320px;
+    height: 106px;
+    position: absolute;
+    top: 337px;
+    background: url(../img/option-base.png) no-repeat;
+}
+
+.prev {
+	position: inherit;
+    left: 12px;
+    top: 45px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.next {
+	position: inherit;
+    right: 8px;
+    top: 45px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.clear {
+    clear: both;
+}
+
+#container {
+    display: none;
+    width: 272px;
+    height: 330px;
+    position: absolute;
+    top: 116px;
+    left: 27px;
+    overflow:visible;
+    padding:0;
+}
+
+.box {
+    color: black;
+    position: absolute;
+    bottom: 0px;
+    z-index: 2;
+}
+
+#box-1 {
+    width: 112px;
+    height: 65px;
+    background: url(../img/pizza.png) no-repeat;
+    background-size: 84.5%;
+    bottom: 13.3px;
+    left: 53.7px;
+    /*display: none;*/
+}
+
+#box-2 {
+    width: 100px;
+    height: 69px;
+    background: url(../img/potato-wedges.png) no-repeat;
+    background-size: 90%;
+    bottom: 15px;
+    left: 77px;
+    display: none;
+}
+
+#box-3 {
+    width: 43px;
+    height: 86px;
+    background: url(../img/fruit-partait.png) no-repeat;
+    background-size: 72%;
+    bottom: -4px;
+    left: 98px;
+    display: none;
+}
+
+#box-4 {
+    width: 53px;
+    height: 47px;
+    background: url(../img/dilmah-tea-grup.png) no-repeat;
+    background-size: 100%;
+    bottom: 27px;
+    left: 92px;
+    display: none;
+}
+
+#box-5 {
+    width: 45px;
+    height: 60px;
+    background: url(../img/peppermint-choho.png) no-repeat;
+    bottom: 23px;
+    left: 75px;
+    display: none;
+}
+
+#box-6 {
+    width: 69px;
+    height: 69px;
+    background: url(../img/santino.png) no-repeat;
+    bottom: 19px;
+    left: 75px;
+    display: none;
+    background-size: 95%;
+}
+
+#box-7 {
+    width: 55px;
+    height: 34px;
+    background: url(../img/creme-bruelee.png) no-repeat;
+    background-size: 100%;
+    bottom: 35px;
+    left: 83px;
+    display: none;
+}
+
+.opacity {
+    filter:alpha(opacity=40);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.4);
+    opacity: .4;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    left: 53px;
+    top: 9px;
+    width: 100px;
+    height: 80px;
+}
+
+.item.pizza .opacity {
+    width: 100px;
+    height: 83px;
+}
+
+.item.potato .opacity {
+    width: 150px;
+    height: 83px;
+    left: 28px;
+}
+
+.item.fruit .opacity {
+    width: 80px;
+    height: 83px;
+}
+
+.item.dilmah .opacity {
+    width: 100px;
+    height: 83px;
+}
+
+.item.peppermint .opacity {
+    width: 70px;
+    height: 83px;
+}
+
+.item.santino .opacity {
+    width: 90px;
+    height: 83px;
+}
+
+.item.creme .opacity {
+    width: 90px;
+    height: 83px;
+}
+
+.jcarousel-wrapper {
+    position: relative;
+    width: 320px;
+    height: 106px;
+}
+
+/** Carousel **/
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    width: 320px;
+    float: left;
+}
+
+.jcarousel li .item {
+    height: 106px;
+    margin-top: 2px;
+    position: relative;
+}
+
+.jcarousel li .item img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/** Carousel Controls **/
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+    position: absolute;
+    top: 200px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #4E443C;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 24px/27px Arial, sans-serif;
+    -webkit-border-radius: 30px;
+       -moz-border-radius: 30px;
+            border-radius: 30px;
+    -webkit-box-shadow: 0 0 2px #999;
+       -moz-box-shadow: 0 0 2px #999;
+            box-shadow: 0 0 2px #999;
+}
